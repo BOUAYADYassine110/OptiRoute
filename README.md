@@ -76,7 +76,6 @@ JWT_SECRET_KEY="your-secure-secret-key"
 3. **Groq AI** (Optional, free LLM):
    - Go to [console.groq.com](https://console.groq.com)
    - Sign up → Get API key
-   - Format: `"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"`
 
 #### Start Backend Server
 ```bash
