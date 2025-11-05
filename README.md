@@ -66,12 +66,10 @@ JWT_SECRET_KEY="your-secure-secret-key"
 1. **OpenRouteService** (Free routing):
    - Go to [openrouteservice.org](https://openrouteservice.org)
    - Sign up → Get API key
-   - Format: `"eyJvcmciOiI1YjNjZTM1OTc4NTExMTAwMDFjZjYyNDgiLCJpZCI6IjE2ZjBlZTlkMjE3MTRjMDliZDdhZmE3MWJjZjJiYzk4IiwiaCI6Im11cm11cjY0In0="`
 
 2. **OpenWeather** (Free weather):
    - Go to [openweathermap.org](https://openweathermap.org/api)
    - Sign up → Get API key
-   - Format: `"dc432e038c133cf77cbb2830152b3c7f"`
 
 3. **Groq AI** (Optional, free LLM):
    - Go to [console.groq.com](https://console.groq.com)
