@@ -1,0 +1,157 @@
+.live-tracking-container {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.tracking-header {
+  padding: 1rem 1.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+.tracking-header h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.order-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+.order-id {
+  font-weight: 600;
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  background: rgba(255,255,255,0.2);
+  border-radius: 15px;
+  font-size: 0.8rem;
+}
+
+.status-badge.delivered {
+  background: #4CAF50;
+}
+
+.progress-bar {
+  position: relative;
+  height: 40px;
+  background: #f0f0f0;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  transition: width 1s linear;
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 600;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.tracking-map {
+  flex: 1;
+  min-height: 400px;
+}
+
+.tracking-details {
+  padding: 1rem 1.5rem;
+  background: #f8f9fa;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.detail-item .label {
+  font-weight: 600;
+  color: #666;
+  min-width: 80px;
+}
+
+.detail-item .value {
+  flex: 1;
+  text-align: right;
+  color: #333;
+}
+
+.detail-item.weather-warning,
+.detail-item.traffic-warning {
+  background: #fff3cd;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border-left: 3px solid #ff9800;
+}
+
+.traffic-clear {
+  color: #10b981;
+  font-weight: 600;
+}
+
+.traffic-moderate {
+  color: #f59e0b;
+  font-weight: 600;
+}
+
+.traffic-heavy {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+.reroute-alert {
+  background: #fef3c7;
+  border-left: 4px solid #f59e0b;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 4px;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.no-order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  color: #999;
+  font-size: 1.1rem;
+}
+
+.live-conditions {
+  margin: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid #eee;
+}
